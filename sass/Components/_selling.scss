@@ -1,0 +1,192 @@
+.selling {
+  .selling__content {
+    width: 90%;
+    margin: 0 auto;
+    .selling__img {
+      padding:  0 100px;
+    }
+    .selling__infor {
+      padding-right: $pd-4;
+      .selling__title {
+        @include styleText($color-black-0, $fs-4, $fw-1);
+      }
+      h5 {
+        display: inline-block;
+        border: 1px solid $color-black-0;
+        margin: 0;
+        margin-top: $pd-0;
+        padding: $pd-0 - 5 $pd-1;
+      }
+      .size-color .col-9 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: $mg-0 0;
+        select {
+          width: 40%;
+          height: 35px;
+          text-align: center;
+          border: 1px solid $color-black-0;
+          border-radius: 3px;
+        }
+      }
+      .selling__price {
+        .row {
+          .col-4 {
+            h3 {
+              @include styleText($color-black-0, $fs-4, $fw-1);
+            }
+          }
+          .col-8 {
+            display: flex;
+            justify-content: end;
+            span i {
+              display: inline-block;
+              width: $fs-4 + 5;
+              height: $fs-4 + 5;
+              border: 1px solid $color-black-0;
+              border-radius: 5px;
+              text-align: center;
+              line-height: $fs-4 + 5;
+              margin-left: $pd-1;
+            }
+          }
+        }
+      }
+      .selling__buy {
+        margin-top: $mg-0;
+        .row {
+          button {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: $pd-0 - 5 0;
+            @include styleText($color-black-0, $fs-1, $fw-0);
+            box-shadow: 0 0 2px 0 $color-black-1;
+          }
+          #buyNow {
+            border: 1px solid $color-black-0;
+            background-color: $color-white-1;
+            border-radius: 5px;
+            a {
+              text-decoration: none;
+              @include styleText($color-black-0, $fs-1, $fw-0);
+            }
+          }
+          #addToCard {
+            border: 1px solid $color-black-0;
+            background-color: $color-black-1;
+            color: $color-white-0;
+            border-radius: 5px;
+          }
+        }
+      }
+      .selling__quantity {
+        display: flex;
+        align-items: center;
+        p {
+          display: inline;
+          padding: 0;
+          width: 40%;
+          margin: 0 $pd-0;
+          @include styleText($color-black-0, $fs-1, $fw-1);
+        }
+      }
+    }
+  }
+}
+@include responsive('extra-large'){
+  .selling .selling__content .selling__infor {
+    padding-right: 0;
+  }
+}
+@include responsive('small'){
+  .selling .selling__content .selling__infor {
+    padding: 0 100px;
+  }
+  .selling .selling__content .selling__infor .selling__title {
+    font-size: 16px;
+  }
+  .selling .selling__content .selling__infor h5 {
+    margin-top: 0;
+    font-size: 14px;
+    padding: 2px 10px;
+  }
+  .selling .selling__content .selling__infor .size-color .col-9 {
+    margin: 10px 0;
+  }
+  .selling .selling__content .selling__infor .size-color .col-9 select {
+    height: 30px;
+  }
+  .selling .selling__content .selling__infor .selling__price .row .col-4 h3 {
+    font-size: 24px;
+  }
+  .selling .selling__content .selling__infor .selling__price .row .col-8 span i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+@include responsive('medium'){
+  .selling .selling__content .selling__infor {
+    padding: 0 100px;
+  }
+  .selling .selling__content .selling__infor .selling__title {
+    font-size: 16px;
+  }
+  .selling .selling__content .selling__infor h5 {
+    margin-top: 0;
+    font-size: 14px;
+    padding: 2px 10px;
+  }
+  .selling .selling__content .selling__infor .size-color .col-9 {
+    margin: 10px 0;
+  }
+  .selling .selling__content .selling__infor .size-color .col-9 select {
+    height: 30px;
+  }
+  .selling .selling__content .selling__infor .selling__price .row .col-4 h3 {
+    font-size: 24px;
+  }
+  .selling .selling__content .selling__infor .selling__price .row .col-8 span i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+//@include responsive('extra-large'){
+//  .selling .selling__content .selling__infor {
+//    padding: 0 100px;
+//  }
+//  .selling .selling__content .selling__infor .selling__title {
+//    font-size: 16px;
+//  }
+//  .selling .selling__content .selling__infor h5 {
+//    margin-top: 0;
+//    font-size: 14px;
+//    padding: 2px 10px;
+//  }
+//  .selling .selling__content .selling__infor .size-color .col-9 {
+//    margin: 10px 0;
+//  }
+//  .selling .selling__content .selling__infor .size-color .col-9 select {
+//    height: 30px;
+//  }
+//  .selling .selling__content .selling__infor .selling__price .row .col-4 h3 {
+//    font-size: 24px;
+//  }
+//  .selling .selling__content .selling__infor .selling__price .row .col-8 span i {
+//    width: 30px;
+//    height: 30px;
+//    line-height: 30px;
+//  }
+//}
+
+@media screen and (max-width: 420px) {
+  .selling .selling__content .selling__img {
+    padding: 0 10px;
+  }
+  .selling .selling__content .selling__infor {
+    padding: 0 10px;
+  }
+}
